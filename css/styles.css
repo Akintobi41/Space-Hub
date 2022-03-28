@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../Images/background-home-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 100vh;
+  overflow-y: hidden;
+  position: relative;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem;
+}
+.top-nav {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.top-nav > button:hover {
+  cursor: pointer;
+}
+.navigation{
+  display: none;
+}
+.navigation.active{ 
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:50%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:linear-gradient(to right, #131522 10%, #53617c 60%);
+  z-index: 999;
+  border:dotted 1px #53617c;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+.navigation.active a {
+  font-size: 1rem;
+  color:#131522;
+  display: inline-block;
+  margin-top: 1.25rem;
+}
+.menuToggle {
+  position: relative;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.875rem;
+  height: 1.875rem;
+  background-color: transparent;
+
+}
+
+@keyframes ham {
+  from{ 
+    opacity:1;
+
+  }
+  to{ 
+  opacity:0;
+  }
+  
+}
+.menuToggle.active img:nth-child(1) {
+  display: block;
+  opacity:1;
+  animation-name: ham;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+}
+.menuToggle.active img:nth-child(2) {
+  
+  display: block;
+  z-index: 1000;
+}
+
+.hamburger,
+.icon-close {
+  position: absolute;
+}
+.icon-close {
+  display: none;
+}
+
+span {
+  display: none;
+}
+.top-nav a {
+  color: white;
+  margin-right: 0.5rem;
+  padding: 0.3rem;
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 580px;
+  justify-content: space-between;
+  align-items: center;
+}
+section {
+  text-align: center;
+  padding: 1rem;
+}
+
+h5 {
+  font-size: 0.8rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 2px;
+}
+h1 {
+  margin-top: 1.2rem;
+  color: white;
+  font-size: 4.3rem;
+  letter-spacing: 5px;
+  font-family: "Comorant Garamond", serif;
+}
+article {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  margin-top: -6rem;
+  padding: 0.5rem;
+  color: white;
+  line-height: 20px;
+}
+hr {
+  opacity: 0;
+}
+.button {
+  font-size: 1.3rem;
+  font-family: "Comorant Garamond", serif;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+.buttons {
+  align-self: center;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 575px) {
+  body {
+    background-image: url("../Images/background-home-tablet.jpg");
+    overflow: hidden;
+  }
+  .text-break {
+    display: none;
+  }
+  article {
+    max-width: 24.9rem;
+  }
+  h1 {
+    font-size: 6.5rem;
+  }
+  .navigation {
+    display: block;
+    padding: 1.5rem 2rem;
+    color: red;
+    background-color: #131522;
+  }
+  .top-nav a {
+    font-family: "Comorant Garamond", sans-serif;
+    padding: 1.4rem 0.3rem;
+    transition:border 0.1s;
+  }
+  .top-nav a:hover {
+    border-bottom: solid 2px white;
+  }
+  .hamburger {
+    display: none;
+  }
+  header {
+    margin: 1rem 0 5rem 2rem;
+  }
+  main {
+    justify-content: space-around;
+    margin-top: -2rem;
+  }
+  #link {
+    border-bottom: solid 2px white;
+    outline: none;
+  }
+  .menuToggle{ 
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 1500px;
+    background-image: url("../Images/background-home-desktop.jpg");
+  }
+  span {
+    display: inline;
+    margin: 0 0.5rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+  main {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 6rem 3rem;
+  }
+  h1 {
+    font-size: 6rem;
+    text-align: left;
+  }
+  h5 {
+    text-align: left;
+    font-size: 1rem;
+  }
+  .post-excerpt {
+    flex-grow: 1;
+  }
+  .post-excerpt-1 {
+    flex-basis: 72%;
+    height: 5.3125rem;
+    overflow: initial;
+  }
+  .post-excerpt-2 {
+    flex-basis: 21.1875rem;
+    align-self: flex-end;
+  }
+  article {
+    margin-top: 5rem;
+    padding: 0;
+  }
+  section {
+    text-align: left;
+    padding: 0;
+  }
+  header {
+    margin-top: 2rem;
+  }
+  .navigation {
+    background: linear-gradient(to right, #131522 10%, #53617c 60%);
+  }
+  hr {
+    opacity: 0.5;
+    width: 33%;
+    height: 1px;
+    position: absolute;
+    right: 501px;
+    top: 32px;
+  }
+}
+@media screen and (min-width: 900px) {
+  nav {
+    width: 100%;
+  }
+  .links-wrapper {
+    display: flex;
+    width: 95%;
+    border: none;
+  }
+
+  aside {
+    z-index: 2;
+    opacity: 0.3;
+    height: 1px;
+    background: gray;
+    align-self: center;
+    margin-right: -2rem;
+    flex-grow: 1;
+  }
+}

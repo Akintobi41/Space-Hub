@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>| Space Hub</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="Images/logo.svg" width="35px" height="35px" />
+      </div>
+
+      <nav class="top-nav">
+        <button class="menuToggle">
+          <img
+            src="Images/icon-hamburger.svg"
+            width="30px"
+            height="30px"
+            class="hamburger"
+          />
+          <img src="Images/icon-close.svg" class="icon-close" width="30px" height="30px" />
+        </button>
+        <div class="links-wrapper">
+          <aside></aside>
+          <div class="navigation">
+            <a href="" id="link"><span>00</span>HOME</a>
+            <a href=""><span>01</span>DESTINATION</a>
+            <a href=""><span>02</span>CREW</a>
+            <a href=""><span>03</span>TECHNOLOGY</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="post-excerpt-1">
+        <h5>SO, YOU WANT TO TRAVEL TO</h5>
+        <h1>SPACE</h1>
+      </section>
+
+      <section class="post-excerpt-2">
+        <article>
+          Let's face it; if you want to go to space, you might<br
+            class="text-break"
+          />
+          as well genuinely go to outer space and not hover<br
+            class="text-break"
+          />
+          kind of on the edge of it. Well sit back, and relax<br
+            class="text-break"
+          />
+          because we'll give you a truly out of this world<br
+            class="text-break"
+          />
+          experience!
+        </article>
+      </section>
+      <div class="buttons">
+        <button class="button">EXPLORE</button>
+      </div>
+    </main>
+    <script>
+      document.getElementById("link").focus();
+      let menuToggle = document.querySelector(".menuToggle");
+      let navigation = document.querySelector(".navigation");
+      menuToggle.onclick = function(){ 
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+      }
+
+    </script>
+  </body>
+</html>
