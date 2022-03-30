@@ -45,12 +45,12 @@ header {
   background: linear-gradient(to right, #131522 10%, #53617c 60%);
   z-index: 999;
   border: dotted 1px #53617c;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .navigation.active a {
   font-size: 1rem;
-  color: #131522;
+  color: #fff;
   display: inline-block;
   margin-top: 1.25rem;
 }
