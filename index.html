@@ -71,6 +71,18 @@
       document.getElementById("link").focus();
       let menuToggle = document.querySelector(".menuToggle");
       let navigation = document.querySelector(".navigation");
+
+
+      document.onlick = function(e){ 
+        if(e.target !== menuToggle.onclick && e.target !== navigation){ 
+          menuToggle.classList.remove('active');
+        navigation.classList.remove('active');
+
+        }
+      }
+
+
+
       menuToggle.onclick = function(){ 
         menuToggle.classList.toggle('active');
         navigation.classList.toggle('active');
