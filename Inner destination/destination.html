@@ -1,32 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Destination</title>
-    <link rel="stylesheet" href="css/styling.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styling.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-       <figure><img src="Images/logo.svg" width="35px" height="35px"  class="header-logo"></figure>
-       <section class="hr"></section>
-       <section class="navigation">
-           <ul>
-               <li><a href=""><span class="navigation-number">00</span> HOME</a></li>
-               <li><a href="" class="nav-2"><span class="navigation-number">01 </span>DESTINATION</a></li>
-               <li><a href=""><span class="navigation-number">02</span> CREW</a></li>
-               <li><a href=""><span class="navigation-number">03</span> TECHNOLOGY</a></li>
-           </ul>
-       </section>
-
+      <figure>
+        <img
+          src="Images/logo.svg"
+          width="35px"
+          height="35px"
+          class="header-logo"
+        />
+      </figure>
+      <section class="hr"></section>
+      <section class="navigation">
+        <ul>
+          <li>
+            <a href="/index.html"
+              ><span class="navigation-number">00</span> HOME</a
+            >
+          </li>
+          <li>
+            <a href="" class="nav-2"
+              ><span class="navigation-number">01 </span>DESTINATION</a
+            >
+          </li>
+          <li>
+            <a href=""><span class="navigation-number">02</span> CREW</a>
+          </li>
+          <li>
+            <a href=""><span class="navigation-number">03</span> TECHNOLOGY</a>
+          </li>
+        </ul>
+      </section>
     </header>
+    <section class="title">
+      <h1 class="main-title">
+        <span class="title-tag">01</span> PICK YOUR DESTINATION
+      </h1>
+    </section>
+       <main>
+        <figure class="sub-menu-image">
+            <img src="/Inner destination/Images/image-mars.png" class="mars" width="300px" height="300px">
+        </figure>
+      
+        <section class="sub-menu"> 
+           
+            <nav class="navigation-2">
+               <ol>
+                  <li><a href="">MOON</a></li>
+                  <li><a href="" class="navigation-2-link">MARS</a></li>
+                  <li><a href="">EUROPA</a></li>
+                  <li><a href="">TITAN</a></li>
+               </ol>
+           </nav>
+           
+           <h3>MARS</h3>
+           <p class="summary-text">Don't forget to pack your hiking boots. You'll need them
+            to tackle Olympus Mons, the tallest planetary moutain in 
+            our solar system . It's two and a half times the size of 
+            Everest!
+           </p>
+            
+           <section class="aside">
+               <p class="aside-text">AVG. DISTANCE</p>
+                <p class="aside-text">EST. TRAVEL TIME </p> 
 
-<script>
- document.querySelector('.nav-2').focus();
-</script>
-</body>
+           </section>
+           <section class="aside-1"> 
+               <p class="aside-1-text">225 MIL. KM</p>
+               <p class="aside-1-text">9 MONTHS</p>
+           </section>
+<!--                
+               <section class="aside-list">
+                 <li class="list-1">AVG. DISTANCE</li>
+                 <li class="list-1">EST.TRAVEL TIME</li>
+               
+               <ul class="aside-list aside-list-01"> 
+                   <li class="list-2">225 MIL. KM</li>
+                   <li class="list-2 aside-list-2">9 MONTHS</li>
+               </ul> -->
+
+            </section>
+      </main>
+    
+
+    
+    <script>
+
+      document.querySelector(".nav-2").focus();
+      document.querySelector('.navigation-2-link').focus();
+   
+   </script>
+  </body>
 </html>
