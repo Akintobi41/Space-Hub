@@ -20,6 +20,7 @@
     />
   </head>
   <body>
+    <!-- Header and Navigation -->
     <header>
       <figure class="main-logo">
         <img
@@ -31,6 +32,8 @@
       </figure>
       <section class="hr"></section>
       <section class="navigation">
+        <img src="/Images/icon-hamburger.svg"  width="30px" height="30px" class="hamburger">
+        <img src="/Images/icon-close.svg"  width="30px" height="30px" class="icon-close">
         <ul>
           <li>
             <a href="/index.html"
@@ -50,18 +53,22 @@
           </li>
         </ul>
       </section>
-    </header>
-  <section>
-    <section class="title">
+    </header> <!-- End of Header -->
+  
+   <!-- Main Content -->
+    <section class="main">
+     <section class="title">
       <h1 class="main-title">
         <span class="title-tag">01</span> PICK YOUR DESTINATION
       </h1>
     </section>
        <main>
+      <!--  Destination Image -->
         <figure class="sub-menu-image">
             <img src="/Inner destination/Images/image-mars.png" class="mars" width="300px" height="300px">
         </figure>
       
+        <!-- Navigation Links and summary -->
         <section class="sub-menu"> 
            
             <nav class="navigation-2">
@@ -79,8 +86,9 @@
             our solar system . It's two and a half times the size of 
             Everest!
            </p>
-            
-           <section class="aside">
+  
+          <!-- Aside information -->
+           <section class="aside">      
                <p class="aside-text">AVG. DISTANCE</p>
                 <p class="aside-text new-aside-text">EST. TRAVEL TIME </p> 
 
@@ -89,26 +97,34 @@
                <p class="aside-1-text">225 MIL. KM</p>
                <p class="aside-1-text new-aside-text">9 MONTHS</p>
            </section>
-<!--                
-               <section class="aside-list">
-                 <li class="list-1">AVG. DISTANCE</li>
-                 <li class="list-1">EST.TRAVEL TIME</li>
-               
-               <ul class="aside-list aside-list-01"> 
-                   <li class="list-2">225 MIL. KM</li>
-                   <li class="list-2 aside-list-2">9 MONTHS</li>
-               </ul> -->
-
+          
+            <!-- Aside information -->
         
       </main>
-  </section>  
+  
+    </section>  
 
-    
+
+  <!-- End of Main Content -->
+     
+  
+  <!-- JavaScript -->
+
     <script>
 
       document.querySelector(".nav-2").focus();
       document.querySelector('.navigation-2-link').focus();
    
+
+      let navToggle = document.querySelector('.navigation');
+
+      navToggle.onclick = function(){ 
+        navToggle.classList.toggle('active')
+      }
+
+       
    </script>
+
+   <!-- End of JavaScript -->
   </body>
 </html>
