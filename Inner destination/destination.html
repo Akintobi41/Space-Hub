@@ -73,10 +73,10 @@
            
             <nav class="navigation-2">
                <ol>
-                  <li><a href="">MOON</a></li>
+                  <li><a href="" class="moon">MOON</a></li>
                   <li><a href="" class="navigation-2-link">MARS</a></li>
                   <li><a href="">EUROPA</a></li>
-                  <li><a href="">TITAN</a></li>
+                  <li><a href="" class="titan">TITAN</a></li>
                </ol>
            </nav>
            
@@ -111,9 +111,22 @@
   <!-- JavaScript -->
 
     <script>
+   let links = document.querySelectorAll('.navigation-2 ol li a')
+   console.log(links)
+   links.forEach(function(eachItem){ 
 
-      document.querySelector(".nav-2").focus();
-      document.querySelector('.navigation-2-link').focus();
+    eachItem.addEventListener('click',function(e){ 
+      // PreventDefault to prevent redirect
+      e.preventDefault();
+      links.forEach(function(eachItem){ 
+            eachItem.classList.remove('active');
+
+      })
+      this.classList.add('active')
+    })
+   })
+      // document.querySelector(".nav-2").focus();
+      // document.querySelector('.navigation-2-link').focus();
    
 
       let navToggle = document.querySelector('.navigation');
@@ -122,7 +135,20 @@
         navToggle.classList.toggle('active')
       }
 
+
+
+      // function changeFocus(){ 
+      //  let titanToggle = document.querySelector(".titan")
+      //  console.log(titanToggle)
+      //  titanToggle.classList.toggle('active')
+      // }
+      //  function changeMoon(){ 
+      //    let moonToggle = document.querySelector(".moon");
+        
+      //    moonToggle.classList.toggle('active')
+      //    titanToggle.classList.remove('active')
        
+      //   }
    </script>
 
    <!-- End of JavaScript -->
