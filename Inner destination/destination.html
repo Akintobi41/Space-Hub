@@ -80,7 +80,7 @@
                </ol>
            </nav>
            
-           <h3>MARS</h3>
+           <h3 class="mars-text">MARS</h3>
            <p class="summary-text">Don't forget to pack your hiking boots. You'll need them
             to tackle Olympus Mons, the tallest planetary moutain in 
             our solar system . It's two and a half times the size of 
@@ -113,6 +113,37 @@
     <script>
    let links = document.querySelectorAll('.navigation-2 ol li a')
    console.log(links)
+   links[0].onclick = function(){ 
+      // links.style.hover.borderBottom = "solid 2px white"
+      document.querySelector('.mars-text').innerHTML = "MOON"
+      links[1].style.borderBottom = "none";
+      links[2].style.borderBottom = "none";
+      let img =  document.querySelector('.mars')
+      img.src ="/Images/image-moon.png";
+    }
+    links[1].onclick = function(){ 
+      document.querySelector('.mars-text').innerHTML = "MARS"
+      links[1].style.borderBottom = "solid 2px white";
+      links[2].style.borderBottom = "none";
+      let img =  document.querySelector('.mars')
+      img.src = "/Inner destination/Images/image-mars.png"
+    }
+    links[2].onclick = function(){ 
+      document.querySelector('.mars-text').innerHTML = "EUROPA"
+      document.querySelector('.mars-text').style.fontSize = "4rem"
+      links[2].style.borderBottom = "solid 2px white";
+      links[1].style.borderBottom = "none"
+      let img =  document.querySelector('.mars')
+      img.src = "/Images/image-europa.png";
+    }
+    links[3].onclick = function(){ 
+      document.querySelector('.mars-text').innerHTML = "TITAN";
+      document.querySelector('.mars-text').style.fontSize = "4rem";
+      links[2].style.borderBottom = "none";
+      let img =  document.querySelector('.mars')
+      img.src = "/Images/image-titan.png";
+
+    }
    links.forEach(function(eachItem){ 
 
     eachItem.addEventListener('click',function(e){ 
@@ -122,8 +153,10 @@
             eachItem.classList.remove('active');
 
       })
-      this.classList.add('active')
+      this.classList.add('active');
+      
     })
+
    })
       // document.querySelector(".nav-2").focus();
       // document.querySelector('.navigation-2-link').focus();
@@ -137,18 +170,6 @@
 
 
 
-      // function changeFocus(){ 
-      //  let titanToggle = document.querySelector(".titan")
-      //  console.log(titanToggle)
-      //  titanToggle.classList.toggle('active')
-      // }
-      //  function changeMoon(){ 
-      //    let moonToggle = document.querySelector(".moon");
-        
-      //    moonToggle.classList.toggle('active')
-      //    titanToggle.classList.remove('active')
-       
-      //   }
    </script>
 
    <!-- End of JavaScript -->

@@ -122,12 +122,11 @@ main {
 .navigation-2 {
   align-self: center;
 }
-/* .navigation-2-link,
-.moon{ 
-  padding-bottom: .4rem; */
-  /* border-bottom: solid 2px white; */
+.navigation-2-link{ 
+  padding-bottom: .4rem; 
+   border-bottom: solid 2px white; 
 
-/* } */
+ }
 /* .navigation-2-link.active{ 
   border-bottom: solid 2px white;
 }
@@ -145,9 +144,8 @@ main {
   padding-bottom: .4rem;
   border-bottom: solid 2px white;
 }
-.navigation-2 ol li a.active h3{ 
-  color:red;
-}
+
+
 
 nav ol li {
   display: inline;
