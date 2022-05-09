@@ -144,7 +144,10 @@ main {
   padding-bottom: .4rem;
   border-bottom: solid 2px white;
 }
-
+/* .navigation-2 ol li a.active:hover{ 
+  padding-bottom: 0.4rem;
+  border-bottom: ;
+} */
 
 
 nav ol li {
@@ -313,7 +316,7 @@ h3 {
     align-self: center;
   }
   .navigation-2 ol li {
-    margin-left: 1.5rem;
+    margin-left: 1rem;
   }
   .navigation-2 ol li a {
     font-size: 0.9rem;
