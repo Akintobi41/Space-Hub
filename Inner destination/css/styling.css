@@ -25,7 +25,6 @@ body {
 
 /* End of Hamburger Menu */
 
-
 header {
   padding: 2rem 0 3rem 3rem;
   display: flex;
@@ -94,15 +93,14 @@ header {
   font-weight: bolder;
 }
 .navigation-2 ol li {
-  color:white;
-  font-size: .7rem;
-  font-family: 'Inter',sans-serif;
-  cursor:pointer;
+  color: white;
+  font-size: 0.7rem;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
 }
-.main{ 
-   margin: 0 auto;
-   padding:1rem;
-
+.main {
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 main {
@@ -122,11 +120,10 @@ main {
 .navigation-2 {
   align-self: center;
 }
-.navigation-2-link{ 
-  padding-bottom: .4rem; 
-   border-bottom: solid 2px white; 
-
- }
+.navigation-2-link {
+  padding-bottom: 0.4rem;
+  border-bottom: solid 2px white;
+}
 /* .navigation-2-link.active{ 
   border-bottom: solid 2px white;
 }
@@ -139,9 +136,8 @@ main {
   
 } */
 
-
 .navigation-2 ol li a.active {
-  padding-bottom: .4rem;
+  padding-bottom: 0.4rem;
   border-bottom: solid 2px white;
 }
 /* .navigation-2 ol li a.active:hover{ 
@@ -149,10 +145,9 @@ main {
   border-bottom: ;
 } */
 
-
 nav ol li {
   display: inline;
-  margin: 0 .625rem;
+  margin: 0 0.625rem;
 }
 nav ol li a {
   text-decoration: none;
@@ -185,7 +180,7 @@ h3 {
   margin-left: 10.9375rem;
 }
 .sub-menu-image {
-  padding: 3rem 0 0 0; 
+  padding: 3rem 0 0 0;
   flex-grow: 1;
   display: flex;
   justify-content: center;
@@ -216,11 +211,14 @@ h3 {
   font-weight: 300;
   color: white;
 }
+  .mars{ 
+
+    filter:saturate(10%)
+  }
 
 /* Media Queries */
 
 @media screen and (max-width: 942px) {
-
   nav ol li {
     margin-left: 0;
   }
@@ -353,98 +351,92 @@ h3 {
 @media screen and (max-width: 574px) {
   body {
     background-image: url("/Images/background-destination-mobile.jpg");
-    padding:1rem;
+    padding: 1rem;
   }
-  .navigation ul{ 
-    display:none;
-    
+  .navigation ul {
+    display: none;
   }
-  .navigation .hamburger{ 
+  .navigation .hamburger {
     display: block;
     margin-left: 0;
-    opacity: .9;
+    opacity: 0.9;
     cursor: pointer;
   }
-  .navigation .hamburger:hover{ 
-    opacity:.4;
-    cursor:pointer;
+  .navigation .hamburger:hover {
+    opacity: 0.4;
+    cursor: pointer;
   }
-  
-  .navigation.active .icon-close{ 
-    display:block;
-    cursor:pointer;
-    opacity:.8;
+
+  .navigation.active .icon-close {
+    display: block;
+    cursor: pointer;
+    opacity: 0.8;
     z-index: 2;
   }
-  .navigation.active ul{ 
-    display:flex;
+  .navigation.active ul {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position:fixed;
+    position: fixed;
     width: 100%;
-    height:50%;
-    left:0;
-    top:0;
-    z-index:1;
+    height: 50%;
+    left: 0;
+    top: 0;
+    z-index: 1;
     border-radius: 10px;
   }
-  .navigation.active .navigation-number { 
-    display:none;
+  .navigation.active .navigation-number {
+    display: none;
   }
-  .navigation.active .nav-2{ 
+  .navigation.active .nav-2 {
     border-bottom: none;
   }
-  
-  
 
-  header{ 
-    padding:1rem 0;
+  header {
+    padding: 1rem 0;
   }
 
-  .navigation { 
-
-    width:2rem;
-    height:2rem;
-    position:relative;
-    display:flex;
+  .navigation {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    display: flex;
     justify-content: center;
     align-items: center;
-
   }
-  .navigation .icon-close{ 
-       position:absolute;
-
+  .navigation .icon-close {
+    position: absolute;
   }
-  main{ 
-    height:auto;
-    padding:1rem;
+  main {
+    height: auto;
+    padding: 1rem;
   }
-  .title{ 
-    padding:0 0.5rem 0 3rem;
+  .title {
+    padding: 0 0.5rem 0 3rem;
   }
-  .sub-menu-image{ 
-    margin-bottom:2rem;
+  .sub-menu-image {
+    margin-bottom: 2rem;
   }
-  .summary-text{ 
-    width:auto;
-    max-width:28rem;
-    text-align:center;
-    padding-bottom:2rem;
-    font-size: .7rem;
+  .summary-text {
+    width: auto;
+    max-width: 28rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 0.7rem;
   }
-  .aside{ 
-    display:block;
-    padding:1rem;
+  .aside {
+    display: block;
+    padding: 1rem;
   }
-  .aside-text{ 
-    font-size:.9rem;
+  .aside-text {
+    font-size: 0.9rem;
   }
-  .aside-1-text { 
-    display:block;
+  .aside-1-text {
+    display: block;
     font-size: 1.5rem;
   }
-  .new-aside-text{ 
+  .new-aside-text {
     display: none;
   }
   .navigation ul li {
@@ -452,89 +444,78 @@ h3 {
     text-align: center;
     margin-top: 2.5rem;
   }
-  .navigation ul li a{
-
+  .navigation ul li a {
     font-size: 1.4rem;
-
   }
-  .navigation ul li a:hover{
-
+  .navigation ul li a:hover {
     border-bottom: none;
   }
-  .main-title{ 
-    font-size:.8rem;
+  .main-title {
+    font-size: 0.8rem;
   }
-  .mars{ 
-    width:13.625rem;
-    height:13.625rem;
-    margin-bottom:1rem;
+  .mars {
+    width: 13.625rem;
+    height: 13.625rem;
+    margin-bottom: 1rem;
   }
-  .navigation-2 ol li a { 
-    font-size:0.65rem;
+  .navigation-2 ol li a {
+    font-size: 0.65rem;
   }
-  h3{
-    margin-bottom:0.3rem;
-    font-size:4rem;
+  h3 {
+    margin-bottom: 0.3rem;
+    font-size: 4rem;
   }
 }
 
-
-@media screen and (max-width:462px) {
-  .sub-menu-image { 
-    margin-bottom:3rem;
+@media screen and (max-width: 462px) {
+  .sub-menu-image {
+    margin-bottom: 3rem;
   }
-  .main-title{ 
-    font-size:.65rem;
+  .main-title {
+    font-size: 0.65rem;
   }
-  .aside-1-text{ 
-    font-size:1.3rem;
+  .aside-1-text {
+    font-size: 1.3rem;
   }
-  .summary-text{ 
+  .summary-text {
     padding-bottom: 1rem;
   }
-  h3{ 
-    font-size:3.5rem;
+  h3 {
+    font-size: 3.5rem;
   }
-  .mars{
-    width:12.625rem;
-    height:12.625rem;
+  .mars {
+    width: 12.625rem;
+    height: 12.625rem;
     margin-bottom: 0;
   }
-  
 }
-@media screen and (max-width:400px) {
-
-
-  .navigation-2 ol li a{ 
-    font-size:0.7rem;
+@media screen and (max-width: 400px) {
+  .navigation-2 ol li a {
+    font-size: 0.7rem;
   }
-  h3{ 
-    font-size:3rem;
+  h3 {
+    font-size: 3rem;
   }
-  .summary-text{ 
-    padding-bottom:1rem;
+  .summary-text {
+    padding-bottom: 1rem;
   }
-  
 }
 
-@media screen and (max-width:360px) {
-  .navigation-2 ol li a { 
-    font-size:.6rem;
+@media screen and (max-width: 360px) {
+  .navigation-2 ol li a {
+    font-size: 0.6rem;
   }
-  .aside{ 
-    padding:1rem 0 .5rem 0;
+  .aside {
+    padding: 1rem 0 0.5rem 0;
   }
-  
 }
-@media screen and (max-width:348px) {
-  .navigation-2 ol li{ 
-    margin-left:0.5rem;
+@media screen and (max-width: 348px) {
+  .navigation-2 ol li {
+    margin-left: 0.5rem;
   }
-  
 }
-@media screen and (max-width:340px) {
-  .navigation-2 ol li a { 
-    font-size:.5rem;
+@media screen and (max-width: 340px) {
+  .navigation-2 ol li a {
+    font-size: 0.5rem;
   }
-  
 }
