@@ -1,33 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crew</title>
-    <link rel="stylesheet" href="/Crew/css/styling.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/Crew/css/styling.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <img src="/Images/logo.svg" width="35px" height="35px" class="logo" >
-        <nav class="menuToggle">
-            <img src="/Images/icon-hamburger.svg" width="30px" height="30px" class="hamburger">
-            <img src="/Images/icon-close.svg" width="30px" height="30px" class="icon-close">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Destination</a></li>
-                <li><a href="">Crew</a></li>
-                <li><a href="">Technology</a></li>
-
-            </ul>
-        </nav>
+      <img src="/Images/logo.svg" width="35px" height="35px" class="logo" />
+      <nav class="menuToggle">
+        <img
+          src="/Images/icon-hamburger.svg"
+          width="30px"
+          height="30px"
+          class="hamburger"
+        />
+        <img
+          src="/Images/icon-close.svg"
+          width="30px"
+          height="30px"
+          class="icon-close"
+        />
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Destination</a></li>
+          <li><a href="">Crew</a></li>
+          <li><a href="">Technology</a></li>
+        </ul>
+      </nav>
     </header>
-   <section class="header-text"> <span class="alt-text-1">02</span><span class="alt-text-2">MEET YOUR CREW</span></section>
-    <main> 
-       <figure>
-           <img src="">
-       </figure>
-
+    <section class="header-text">
+      <span class="alt-text-1">02</span
+      ><span class="alt-text-2">MEET YOUR CREW</span>
+    </section>
+    <main>
+      <figure>
+        <img src="/Images/image-anousheh-ansari.png" class="crew-image-1" />
+        <section class="slider">
+          <input type="button" class="slider-toggle" /><input
+            type="button"
+            class="slider-toggle"
+          /><input type="button" class="slider-toggle" /><input
+            class="slider-toggle toggle-4"
+            type="button"
+          />
+        </section>
+      </figure>
+      <article>
+        <h4>FLIGHT ENGINEER</h4>
+        <h3>ANOUSHEH ANSARI</h3>
+        <p>Anousheh Ansari is an Iranian American engineer<br>and co-founder of Prodea Systems. Ansari was the <br>fourth self-funded space tourist the first, the first self<br>-funded woman to fly to the ISS, and the first<br>
+        Iranian in space.</p>
+      </article>
     </main>
-</body>
+    <script>
+        let hamburger = document.querySelector('.hamburger');
+        let iconClose = document.querySelector('.icon-close');
+
+        let menuToggle = document.querySelector('.menuToggle');
+        
+        menuToggle.addEventListener('click',function(){ 
+            menuToggle.classList.toggle('active');
+        })
+
+        document.body.onclick = function(e){ 
+            if(e.target != hamburger && e.target != iconClose ){ 
+                menuToggle.classList.remove('active');
+            }
+         
+        }
+    </script>
+  </body>
 </html>

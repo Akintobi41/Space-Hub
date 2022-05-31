@@ -3,6 +3,7 @@
     padding:0;
     box-sizing:border-box;
     color: #fff;
+    font-family: 'Inter',monospace;
 }
 body{ 
     margin: auto;
@@ -37,15 +38,97 @@ h5{
     font-size:.9rem;
     
 }
-.alt-text-1{ 
-    /* margin-left:1rem; */
-}
-.alt-text-2{ 
-    /* margin-left:1rem; */
-}
 .header-text{ 
     display: flex;
     justify-content: space-around;
     width:12rem;
     font-size: .8rem;
+    margin-bottom: 2.5rem;
+
 }
+main{ 
+    width: 100%;
+    margin-top:4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+figure{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.crew-image-1{ 
+    width:65%;
+    height:65%;
+    margin-bottom: 1.5rem;
+}
+.slider{ 
+    width: 24%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.slider-toggle{ 
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: #50545d;
+
+}
+.toggle-4{ 
+    background-color: #fafafc;
+}
+article h4{ 
+    color: #7b7e85;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+article h3{ 
+    text-align: center;
+    margin-bottom:2rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+article p { 
+    text-align: center;
+    font-size: .684rem;
+    line-height: 17px;
+    /* /* color: #7f8190; */
+} 
+.menuToggle.active .hamburger{ 
+    display: none;
+}
+.menuToggle.active .icon-close{ 
+    display: block;
+    z-index: 1;
+}
+.menuToggle.active ul{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    background: linear-gradient( to right, hsla(215, 11%, 35%, 1), hsla(217, 23%, 18%, 1) );
+    width: 100%;
+    height: 50%;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius: 5px;
+}
+.menuToggle.active ul li { 
+    display: inline-block;
+    /* width: 100%; */
+
+    margin-top:2rem;
+    font-size: 1rem;
+}
+.menuToggle.active ul li a{ 
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+

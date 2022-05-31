@@ -74,9 +74,9 @@
 
 
       document.onclick = function(e){ 
-        if( e.target.id !== 'menuToggle'){ 
+        if( e.target != document.querySelector('.hamburger') && e.target != document.querySelector('.icon-close')){ 
           menuToggle.classList.remove('active');
-        // navigation.classList.remove('active');
+        navigation.classList.remove('active');
 
         }
       
