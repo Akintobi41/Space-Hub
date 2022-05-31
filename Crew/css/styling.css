@@ -1,0 +1,51 @@
+*{ 
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    color: #fff;
+}
+body{ 
+    margin: auto;
+    padding:1rem;
+    height:100vh;
+    background:url('/Images/background-crew-mobile.jpg') no-repeat;
+    background-size: cover;
+}
+header{ 
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.menuToggle{ 
+    width: 35px;
+    height:35px;
+}
+.menuToggle ul { 
+    display: none;
+}
+.menuToggle{ 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-close{ 
+    position: absolute;
+    display: none;
+}
+h5{ 
+    font-size:.9rem;
+    
+}
+.alt-text-1{ 
+    /* margin-left:1rem; */
+}
+.alt-text-2{ 
+    /* margin-left:1rem; */
+}
+.header-text{ 
+    display: flex;
+    justify-content: space-around;
+    width:12rem;
+    font-size: .8rem;
+}

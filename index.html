@@ -68,17 +68,18 @@
       </div>
     </main>
     <script>
-      document.getElementById("link").focus();
+      // document.getElementById("link").focus();
       let menuToggle = document.querySelector(".menuToggle");
       let navigation = document.querySelector(".navigation");
 
 
-      document.onlick = function(e){ 
-        if(e.target !== menuToggle.onclick && e.target !== navigation){ 
+      document.onclick = function(e){ 
+        if( e.target.id !== 'menuToggle'){ 
           menuToggle.classList.remove('active');
-        navigation.classList.remove('active');
+        // navigation.classList.remove('active');
 
         }
+      
       }
 
 

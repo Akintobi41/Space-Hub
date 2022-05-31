@@ -140,10 +140,6 @@ main {
   padding-bottom: 0.4rem;
   border-bottom: solid 2px white;
 }
-/* .navigation-2 ol li a.active:hover{ 
-  padding-bottom: 0.4rem;
-  border-bottom: ;
-} */
 
 nav ol li {
   display: inline;
@@ -211,10 +207,7 @@ h3 {
   font-weight: 300;
   color: white;
 }
-  .mars{ 
-
-    filter:saturate(10%)
-  }
+  
 
 /* Media Queries */
 
@@ -392,6 +385,12 @@ h3 {
   .navigation.active .nav-2 {
     border-bottom: none;
   }
+  .navigation.active ul li a{
+    display:inline-block; 
+    padding-bottom: 0;
+    margin-top:0.65rem;
+  }
+  
 
   header {
     padding: 1rem 0;
@@ -442,10 +441,11 @@ h3 {
   .navigation ul li {
     display: block;
     text-align: center;
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
+    padding:0;
   }
   .navigation ul li a {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   .navigation ul li a:hover {
     border-bottom: none;
@@ -517,5 +517,19 @@ h3 {
 @media screen and (max-width: 340px) {
   .navigation-2 ol li a {
     font-size: 0.5rem;
+  }
+}
+@media screen and (max-width:300px){ 
+  body{
+     padding:1.2rem;
+  }
+  .title{ 
+    padding: 0 0.2rem 0 .4rem;
+  }
+  .main{ 
+    padding: 0;
+  }
+  main{ 
+    padding:.4rem;
   }
 }
