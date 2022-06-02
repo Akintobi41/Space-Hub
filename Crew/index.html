@@ -14,6 +14,7 @@
     />
   </head>
   <body>
+    <!-- Header -->
     <header>
       <img src="/Images/logo.svg" width="35px" height="35px" class="logo" />
       <nav class="menuToggle">
@@ -41,42 +42,136 @@
       <span class="alt-text-1">02</span
       ><span class="alt-text-2">MEET YOUR CREW</span>
     </section>
+    <!-- End of Header -->
+
+    <!-- Main Content -->
     <main>
       <figure>
         <img src="/Images/image-anousheh-ansari.png" class="crew-image-1" />
         <section class="slider">
-          <input type="button" class="slider-toggle" /><input
+          <input type="button" class="slider-toggle toggle-1" /><input
             type="button"
-            class="slider-toggle"
-          /><input type="button" class="slider-toggle" /><input
+            class="slider-toggle toggle-2"
+          /><input type="button" class="slider-toggle toggle-3" /><input
             class="slider-toggle toggle-4"
             type="button"
           />
         </section>
       </figure>
       <article>
-        <h4>FLIGHT ENGINEER</h4>
-        <h3>ANOUSHEH ANSARI</h3>
-        <p>Anousheh Ansari is an Iranian American engineer<br>and co-founder of Prodea Systems. Ansari was the <br>fourth self-funded space tourist the first, the first self<br>-funded woman to fly to the ISS, and the first<br>
-        Iranian in space.</p>
+        <h4 class="crew-title">FLIGHT ENGINEER</h4>
+        <h3 class="crew-name">ANOUSHEH ANSARI</h3>
+        <p class="crew-text">
+          Anousheh Ansari is an Iranian American engineer and co-founder of
+          Prodea Systems. Ansari was the fourth self-funded space tourist the
+          first, the first self-funded woman to fly to the ISS, and the first
+          Iranian in space.
+        </p>
       </article>
     </main>
+    <!-- ENd of Main Content -->
+
     <script>
-        let hamburger = document.querySelector('.hamburger');
-        let iconClose = document.querySelector('.icon-close');
+      let hamburger = document.querySelector(".hamburger");
+      let iconClose = document.querySelector(".icon-close");
 
-        let menuToggle = document.querySelector('.menuToggle');
-        
-        menuToggle.addEventListener('click',function(){ 
-            menuToggle.classList.toggle('active');
-        })
+      let menuToggle = document.querySelector(".menuToggle");
 
-        document.body.onclick = function(e){ 
-            if(e.target != hamburger && e.target != iconClose ){ 
-                menuToggle.classList.remove('active');
-            }
-         
+      menuToggle.addEventListener("click", function () {
+        menuToggle.classList.toggle("active");
+      });
+
+      document.body.onclick = function (e) {
+        if (e.target != hamburger && e.target != iconClose) {
+          menuToggle.classList.remove("active");
         }
+      };
+
+      let images = [
+        "/Images/image-douglas-hurley.png",
+        "/Images/image-mark-shuttleworth.png",
+        "/Images/image-victor-glover.png",
+        "/Images/image-anousheh-ansari.png",
+      ];
+
+      let toggleButtons = document.querySelectorAll(".slider-toggle");
+
+      let crewImage = document.querySelector(".crew-image-1");
+      let crewText = document.querySelector(".crew-text");
+      let crewTitle = document.querySelector(".crew-title");
+      let crewName = document.querySelector(".crew-name");
+
+      toggleButtons.forEach((item) => {
+        item.addEventListener("click", function (e) {
+          if (e.target.className.endsWith("toggle-1")) {
+            crewImage.src = images[0];
+            crewImage.style.width = "50%";
+            crewImage.style.height = "50%";
+
+            crewText.style.fontSize = ".84rem";
+            crewText.innerHTML =
+              "Meet your crew Commander Douglas Hurley Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2";
+            crewTitle.textContent = "COMMANDER";
+            crewName.textContent = "DOUGLAS HURLEY GERALD";
+            item.style.backgroundColor = "#fff";
+            toggleButtons[3].style.backgroundColor = "#50545d";
+
+            toggleButtons[1].style.backgroundColor = "#50545d";
+
+            toggleButtons[2].style.backgroundColor = "#50545d";
+          }
+
+          if (e.target.className.endsWith("toggle-2")) {
+            crewImage.src = images[1];
+            crewImage.style.width = "46%";
+            crewImage.style.height = "46%";
+
+            crewText.innerHTML =
+              "Meet your crew Mission Specialist Mark Shuttleworth Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.";
+            crewTitle.textContent = "MISSION SPECIALIST";
+            crewName.textContent = "MARK SHUTTLEWORTH";
+            item.style.backgroundColor = "#fff";
+            toggleButtons[3].style.backgroundColor = "#50545d";
+
+            toggleButtons[2].style.backgroundColor = "#50545d";
+
+            toggleButtons[0].style.backgroundColor = "#50545d";
+          }
+          if (e.target.className.endsWith("toggle-3")) {
+            crewImage.src = images[2];
+            crewImage.style.width = "58%";
+            crewImage.style.height = "58%";
+
+            crewText.innerHTML =
+              "Meet your crew Pilot Victor Glover Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18. He was a crew member of Expedition 64, and served as a station systems flight engineer.";
+            crewTitle.textContent = "CREW PILOT";
+            crewName.textContent = "VICTOR GLOVER";
+            item.style.backgroundColor = "#fff";
+
+            toggleButtons[3].style.backgroundColor = "#50545d";
+
+            toggleButtons[1].style.backgroundColor = "#50545d";
+
+            toggleButtons[0].style.backgroundColor = "#50545d";
+          }
+          if (e.target.className.endsWith("toggle-4")) {
+            crewImage.src = images[3];
+            crewImage.style.width = "65%";
+            crewImage.style.height = "65%";
+
+            crewText.innerHTML =
+              "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist the first, the first self-funded woman to fly to the ISS, and the first Iranian in space.";
+            crewTitle.textContent = "FLIGHT ENGINEER";
+            crewName.textContent = "ANOUSHEH ANSARI";
+            item.style.backgroundColor = "#fff";
+            toggleButtons[2].style.backgroundColor = "#50545d";
+
+            toggleButtons[1].style.backgroundColor = "#50545d";
+
+            toggleButtons[0].style.backgroundColor = "#50545d";
+          }
+        });
+      });
     </script>
   </body>
 </html>

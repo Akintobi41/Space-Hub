@@ -3,7 +3,7 @@
     padding:0;
     box-sizing:border-box;
     color: #fff;
-    font-family: 'Inter',monospace;
+    font-family: 'Inter',sans-serif;
 }
 body{ 
     margin: auto;
@@ -59,6 +59,7 @@ figure{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .crew-image-1{ 
     width:65%;
@@ -77,6 +78,7 @@ figure{
     border-radius: 50%;
     border: none;
     background-color: #50545d;
+    color: #50545d;
 
 }
 .toggle-4{ 
@@ -89,14 +91,15 @@ article h4{
 }
 article h3{ 
     text-align: center;
-    margin-bottom:2rem;
+    margin-bottom:1rem;
     font-size: 1.5rem;
     font-weight: 100;
 }
 article p { 
     text-align: center;
-    font-size: .684rem;
-    line-height: 17px;
+    font-size: .85rem;
+    line-height: 16px;
+    letter-spacing: 2px;
     /* /* color: #7f8190; */
 } 
 .menuToggle.active .hamburger{ 
@@ -132,3 +135,30 @@ article p {
     text-decoration: none;
 }
 
+
+
+/* Media Queries */
+
+@media screen and (min-width:575px) {
+    body{ 
+        background: url('/Images/background-crew-tablet.jpg') no-repeat;
+        background-size: cover;
+    }
+    .hamburger,.icon-close{ 
+        display: none;
+    }
+    .menuToggle{ 
+        width: 50%;
+    }
+   .menuToggle ul{ 
+        display: flex;
+        /* margin-left: 20px; */
+        width: 50%;
+        justify-content: space-around;
+    }
+    .menuToggle ul li{ 
+        list-style-type: none;
+
+    }
+
+}
