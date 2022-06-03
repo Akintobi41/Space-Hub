@@ -80,7 +80,7 @@ header {
 }
 .title {
   position: relative;
-  padding: 1rem 0.5rem 2rem 5rem;
+  padding: 1rem 0.5rem 2rem 1rem;
   margin-left: 2.1875rem;
 }
 .main-title {
@@ -411,7 +411,7 @@ h3 {
     padding: 1rem;
   }
   .title {
-    padding: 0 0.5rem 0 3rem;
+    padding: 0 0.5rem 0 1rem;
   }
   .sub-menu-image {
     margin-bottom: 2rem;
