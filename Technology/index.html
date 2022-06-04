@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology</title>
+    <link rel="stylesheet"  href="/Technology/css/stylesheet.css">
+</head>
+<body>
+     <!-- Start of Header -->
+    <header>
+        <img src="/Images/logo.svg" width="35px" height="35px">
+          
+        <nav class="menuToggle">
+
+            <img src="/Images/icon-hamburger.svg" alt="open hamburger" width="30px" height="30px" class="hamburger">
+            <img src="/Images/icon-close.svg" alt="close hamburger" width="30px" height="30px" class="icon-close">
+            
+            <ul>
+            
+                <li><a href=""> <span>00</span>HOME</a></li>
+                <li><a href=""><span>01</span> DESTINATION</a></li>
+                <li><a href=""><span>02</span>CREW</a></li>
+                <li><a href=""><span>03</span>TECHNOLOGY</a></li>
+            
+            </ul>
+        </nav>
+
+    </header>
+    <section class="header-text">
+        <span class="header-text-01">03</span><span class="header-text-02">SPACE LAUNCH 101</span>
+    </section>
+
+
+    <script> 
+    
+    let menuToggle = document.querySelector('.menuToggle')
+   
+   
+    menuToggle.addEventListener('click',function(){ 
+
+            menuToggle.classList.toggle('active');
+
+    })
+
+
+    </script>
+</body>
+</html>

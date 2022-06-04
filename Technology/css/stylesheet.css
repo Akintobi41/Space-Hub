@@ -1,0 +1,49 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+body{ 
+    margin: auto;
+    height: 100vh;
+    padding: 1rem;
+    background:url('/Images/background-technology-mobile.jpg') no-repeat;
+    background-size: cover;
+
+}
+ ul{ 
+    display: none;
+}
+header{ 
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+}
+.menuToggle{ 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-close{ 
+    /* position: absolute; */
+    display: none;
+}
+.menuToggle.active .icon-close{ 
+    display: flex;
+}
+
+.menuToggle.active .hamburger{ 
+   display: none;
+}
+.header-text{ 
+    padding:0 2.5rem;
+    margin-top:1.5rem;
+}
+.header-text-01{ 
+    margin-right: 1rem;
+}
+
+
+

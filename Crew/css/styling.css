@@ -171,7 +171,6 @@ article p {
   .menuToggle ul {
     display: flex;
     margin-left: 1.5rem;
-    /* width: 50%; */
     justify-content: space-around;
   }
   .menuToggle ul li {
