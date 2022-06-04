@@ -16,26 +16,28 @@
   <body>
     <!-- Header -->
     <header>
-      <img src="/Images/logo.svg" class="logo" width="35px" height="35px" class="logo" />
+      <img src="/Images/logo.svg" alt="star-like logo" class="logo" width="35px" height="35px" class="logo" />
      <section class="links-wrapper">
        <hr>
       <nav class="menuToggle">
         <img
           src="/Images/icon-hamburger.svg"
           width="30px"
+          alt="open hamburger"
           height="30px"
           class="hamburger"
         />
         <img
           src="/Images/icon-close.svg"
+          alt="close hamburger"
           width="30px"
           height="30px"
           class="icon-close"
         />
         
         <ul>
-          <li><a href=""><span class="sn">00</span> HOME</a></li>
-          <li><a href=""><span class="sn">01</span> DESTINATION</a></li>
+          <li><a href="/index.html"><span class="sn">00</span> HOME</a></li>
+          <li><a href="/Inner destination/index.html"><span class="sn">01</span> DESTINATION</a></li>
           <li><a href="" class="crew-link"><span class="sn">02</span> CREW</a></li>
           <li><a href=""><span class="sn">03</span> TECHNOLOGY</a></li>
         </ul>
@@ -112,7 +114,6 @@
             crewImage.style.width = "50%";
             crewImage.style.height = "50%";
 
-            // crewText.style.fontSize = ".84rem";
             crewText.innerHTML =
               "Meet your crew Commander Douglas Hurley Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2";
             crewTitle.textContent = "COMMANDER";
@@ -162,7 +163,7 @@
             crewImage.src = images[3];
             crewImage.style.width = "65%";
             crewImage.style.height = "65%";
-
+             
             crewText.innerHTML =
               "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist the first, the first self-funded woman to fly to the ISS, and the first Iranian in space.";
             crewTitle.textContent = "FLIGHT ENGINEER";
@@ -181,20 +182,25 @@
       let newImages = ["/Images/image-anousheh-ansari.webp","/Images/image-douglas-hurley.webp","/Images/image-mark-shuttleworth.webp","/Images/image-victor-glover.webp"]
 
 function imgEdit(mediaX){ 
+
   if(mediaX.matches){ 
+
     crewImage.src = newImages[0]
+    
     toggleButtons.forEach((item) => {
-        item.addEventListener("click", function (e) {
+    
+      item.addEventListener("click", function (e) {
           if (e.target.className.endsWith("toggle-1")) {
             crewImage.src = newImages[1];
-            crewImage.style.width = "50%";
-            crewImage.style.height = "50%";
+            crewImage.style.width = "20rem";
+            crewImage.style.height = "27rem";
 
-            // crewText.style.fontSize = ".84rem";
+            
             crewText.innerHTML =
               "Meet your crew Commander Douglas Hurley Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2";
             crewTitle.textContent = "COMMANDER";
             crewName.textContent = "DOUGLAS HURLEY GERALD";
+            // crewName.style.fontSize = "1.5rem"
             item.style.backgroundColor = "#fff";
             toggleButtons[3].style.backgroundColor = "#50545d";
 
@@ -205,8 +211,8 @@ function imgEdit(mediaX){
 
           if (e.target.className.endsWith("toggle-2")) {
             crewImage.src = newImages[2];
-            crewImage.style.width = "46%";
-            crewImage.style.height = "46%";
+            crewImage.style.width = "20rem";
+            crewImage.style.height = "27rem";
 
             crewText.innerHTML =
               "Meet your crew Mission Specialist Mark Shuttleworth Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.";
@@ -221,8 +227,8 @@ function imgEdit(mediaX){
           }
           if (e.target.className.endsWith("toggle-3")) {
             crewImage.src = newImages[3];
-            crewImage.style.width = "58%";
-            crewImage.style.height = "58%";
+            crewImage.style.width = "20rem";
+            crewImage.style.height = "27rem";
 
             crewText.innerHTML =
               "Meet your crew Pilot Victor Glover Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18. He was a crew member of Expedition 64, and served as a station systems flight engineer.";
@@ -238,8 +244,8 @@ function imgEdit(mediaX){
           }
           if (e.target.className.endsWith("toggle-4")) {
             crewImage.src = newImages[0];
-            crewImage.style.width = "65%";
-            crewImage.style.height = "65%";
+            crewImage.style.width = "20rem";
+            crewImage.style.height = "27rem";
 
             crewText.innerHTML =
               "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist the first, the first self-funded woman to fly to the ISS, and the first Iranian in space.";

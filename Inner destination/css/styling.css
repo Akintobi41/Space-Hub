@@ -86,6 +86,7 @@ header {
 .main-title {
   color: white;
   font-size: 1rem;
+  margin-left: 5rem;
 }
 
 .title-tag {
@@ -174,13 +175,14 @@ h3 {
   border-block-width: 0.2px;
   font-size: 0.7rem;
   margin-left: 10.9375rem;
+  /* justify-content: center; */
 }
 .sub-menu-image {
   padding: 3rem 0 0 0;
   flex-grow: 1;
   display: flex;
-  justify-content: center;
   align-items: flex-end;
+  justify-content: center;
 }
 
 .aside-list {
@@ -284,6 +286,10 @@ h3 {
   .title-tag {
     margin-left: 0.5rem;
   }
+  .title{ 
+    width: 27rem;
+    text-align: center;
+  }
   .sub-menu {
     height: 35vh;
     margin-top: 0;
@@ -344,6 +350,7 @@ h3 {
   body {
     background-image: url("/Images/background-destination-mobile.jpg");
     padding: 1rem;
+    overflow: hidden;
   }
   .navigation ul {
     display: none;
@@ -412,6 +419,7 @@ h3 {
   }
   .title {
     padding: 0 0.5rem 0 1rem;
+    text-align: left;
   }
   .sub-menu-image {
     margin-bottom: 2rem;
