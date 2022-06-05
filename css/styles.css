@@ -53,6 +53,7 @@ header {
   color: #fff;
   display: inline-block;
   margin-top: 1.25rem;
+  font-family: 'Inter',sans-serif;
 }
 .menuToggle {
   position: relative;

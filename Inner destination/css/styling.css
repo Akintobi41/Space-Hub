@@ -459,6 +459,7 @@ h3 {
   }
   .main-title {
     font-size: 0.8rem;
+    margin-left: 0;
   }
   .mars {
     width: 13.625rem;

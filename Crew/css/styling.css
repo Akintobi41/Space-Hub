@@ -27,6 +27,7 @@ hr {
 .menuToggle {
   width: 2.1875rem;
   height: 2.1875rem;
+  cursor: pointer;
 }
 .menuToggle ul {
   display: none;
@@ -139,7 +140,7 @@ article p {
   font-size: 1rem;
 }
 .menuToggle.active ul li a {
-  font-size: 1.3rem;
+  font-size: 1rem;
   text-decoration: none;
 }
 .alt-text-2 {
