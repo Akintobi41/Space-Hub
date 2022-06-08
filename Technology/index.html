@@ -18,47 +18,57 @@
     <!-- Start of Header -->
 
     <header>
-      <img src="/Images/logo.svg"  width="35px" height="35px" class="logo" />
+      <img src="/Images/logo.svg" width="35px" height="35px" class="logo" />
 
-<section class="links-wrapper">
-      <hr>
-      <nav class="menuToggle">
-        <img
-          src="/Images/icon-hamburger.svg"
-          alt="open hamburger"
-          width="30px"
-          height="30px"
-          class="hamburger"
-        />
-        <img
-          src="/Images/icon-close.svg"
-          alt="close hamburger"
-          width="30px"
-          height="30px"
-          class="icon-close"
-        />
+      <section class="links-wrapper">
+        <hr />
+        <nav class="menuToggle">
+          <img
+            src="/Images/icon-hamburger.svg"
+            alt="open hamburger"
+            width="30px"
+            height="30px"
+            class="hamburger"
+          />
+          <img
+            src="/Images/icon-close.svg"
+            alt="close hamburger"
+            width="30px"
+            height="30px"
+            class="icon-close"
+          />
 
-        <ul>
-          <li>
-            <a href="/index.html"> <span class="list-number">00</span>HOME</a>
-          </li>
-          <li>
-            <a href="/Inner destination/index.html"><span class="list-number">01</span> DESTINATION</a>
-          </li>
-          <li>
-            <a href="/Crew/index.html"><span class="list-number">02</span>CREW</a>
-          </li>
-          <li>
-            <a href="" class="technology-link"><span class="list-number">03</span>TECHNOLOGY</a>
-          </li>
-        </ul>
-      </nav>
-     </section> 
+          <ul>
+            <li>
+              <a href="/index.html"> <span class="list-number">00</span>HOME</a>
+            </li>
+            <li>
+              <a href="/Inner destination/index.html"
+                ><span class="list-number">01</span> DESTINATION</a
+              >
+            </li>
+            <li>
+              <a href="/Crew/index.html"
+                ><span class="list-number">02</span>CREW</a
+              >
+            </li>
+            <li>
+              <a href="" class="technology-link"
+                ><span class="list-number">03</span>TECHNOLOGY</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
     </header>
     <section class="header-text">
       <span class="header-text-01">03</span
       ><span class="header-text-02">SPACE LAUNCH 101</span>
     </section>
+
+    <!-- End of Header -->
+
+    <!-- Start of main content -->
     <main>
       <figure class="Image-collection">
         <img
@@ -66,27 +76,45 @@
           height="250px"
           class="tech-image-1"
         />
-        <section class="slider">
+        <section class="slider sn">
           <button class="button-slider btn-1">1</button>
           <button class="button-slider btn-2">2</button>
           <button class="button-slider btn-3">3</button>
         </section>
       </figure>
-      <article>
-        <p class="article-header">THE TECHNOLOGY....</p>
-        <h3 class="article-title">LAUNCH VEHICLE</h3>
-        <p class="article-text">
-          A launch vehicle or carrier rocket is a rocket-propelled vehicle used
-          to carry a payload from Earth's surface to space, usually to Earth
-          orbit or beyond. Our WEB-X carrier rocket is the most powerful in
-          operation. Standing 150 metres tall, it's quite an awe-inspiring sight
-          on the launch pad!
-        </p>
-      </article>
+
+      <section class="new-content">
+        <section class="slider desktop-only">
+          <button class="button-slider btn-1 new-button 01">1</button>
+          <button class="button-slider btn-2 new-button 02">2</button>
+          <button class="button-slider btn-3 new-button 03">3</button>
+        </section>
+        <article>
+          <p class="article-header">THE TECHNOLOGY....</p>
+          <h3 class="article-title">LAUNCH VEHICLE</h3>
+          <p class="article-text">
+            A launch vehicle or carrier rocket is a rocket-propelled vehicle
+            used to carry a payload from Earth's surface to space, usually to
+            Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful
+            in operation. Standing 150 metres tall, it's quite an awe-inspiring
+            sight on the launch pad!
+          </p>
+        </article>
+      </section>
     </main>
 
+    <!-- End of main content -->
     <script>
       let menuToggle = document.querySelector(".menuToggle");
+
+      let hamburger = document.querySelector(".hamburger");
+      let iconClose = document.querySelector(".icon-close");
+
+      document.onclick = function (e) {
+        if (e.target != hamburger && e.target != iconClose) {
+          menuToggle.classList.remove("active");
+        }
+      };
 
       menuToggle.addEventListener("click", function () {
         menuToggle.classList.toggle("active");
@@ -112,74 +140,156 @@
             techImage.src = images[1];
             item.style.backgroundColor = "#fff";
             item.style.color = "#0b0e17";
-            item.style.border = "none"
+            item.style.border = "none";
             buttons[0].style.backgroundColor = "transparent";
             buttons[0].style.color = "#fff";
             buttons[0].style.border = "solid 2px grey";
-            
+
             buttons[2].style.backgroundColor = "transparent";
             buttons[2].style.color = "#fff";
             buttons[2].style.border = "solid 2px grey";
-               
 
             buttons[0].style.outline = "none";
-              buttons[2].style.outline = "none";
-
+            buttons[2].style.outline = "none";
 
             techTitle.innerHTML = "SPACE CAPSULE";
             techText.innerHTML =
               "Space capsule A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.";
-          
-            }
+          }
 
-          if(e.target.className.endsWith("btn-3")){ 
-              techImage.src = images[2];
-              item.style.backgroundColor= "#fff";
-              item.style.color = "#0b0e17";
-              item.style.border = "none"
-              buttons[0].style.backgroundColor = "transparent";
-              buttons[1].style.backgroundColor = "transparent";
-             
-              buttons[0].style.color = "#fff";
-              buttons[1].style.color = "#fff";
-             
-              buttons[0].style.border = "solid 2px grey";
-              buttons[1].style.border = "solid 2px grey";
+          if (e.target.className.endsWith("btn-3")) {
+            techImage.src = images[2];
+            item.style.backgroundColor = "#fff";
+            item.style.color = "#0b0e17";
+            item.style.border = "none";
+            buttons[0].style.backgroundColor = "transparent";
+            buttons[1].style.backgroundColor = "transparent";
 
-              buttons[0].style.outline = "none";
-              buttons[1].style.outline = "none";
+            buttons[0].style.color = "#fff";
+            buttons[1].style.color = "#fff";
 
+            buttons[0].style.border = "solid 2px grey";
+            buttons[1].style.border = "solid 2px grey";
 
-              techTitle.innerHTML = "SPACEPORT";
-              techText.innerHTML = "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch."
-            }
-            if(e.target.className.endsWith("btn-1")){ 
-              techImage.src = images[0];
-              item.style.backgroundColor = "#fff";
-              item.style.color = "#0b0e17";
-              item.style.border = "none"
+            buttons[0].style.outline = "none";
+            buttons[1].style.outline = "none";
 
-              buttons[1].style.backgroundColor = "transparent";
-              buttons[2].style.backgroundColor = "transparent";
-             
-              buttons[1].style.color = "#fff";
-              buttons[2].style.color = "#fff";
-             
-              buttons[1].style.border = "solid 2px grey";
-              buttons[2].style.border = "solid 2px grey";
-              
-              buttons[1].style.outline = "none";
-              buttons[2].style.outline = "none";
-              
+            techTitle.innerHTML = "SPACEPORT";
+            techText.innerHTML =
+              "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.";
+          }
+          if (e.target.className.endsWith("btn-1")) {
+            techImage.src = images[0];
+            item.style.backgroundColor = "#fff";
+            item.style.color = "#0b0e17";
+            item.style.border = "none";
 
-              techTitle.innerHTML = "LAUNCH VEHICLE";
-              techText.innerHTML = "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!"
-            
-            }
+            buttons[1].style.backgroundColor = "transparent";
+            buttons[2].style.backgroundColor = "transparent";
 
+            buttons[1].style.color = "#fff";
+            buttons[2].style.color = "#fff";
 
+            buttons[1].style.border = "solid 2px grey";
+            buttons[2].style.border = "solid 2px grey";
+
+            buttons[1].style.outline = "none";
+            buttons[2].style.outline = "none";
+
+            techTitle.innerHTML = "LAUNCH VEHICLE";
+            techText.innerHTML =
+              "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!";
+          }
         });
       });
+
+      let desktopButtons = document.querySelectorAll(".new-button");
+      console.log(desktopButtons);
+
+      let newImages = [
+        "/Images/image-launch-vehicle-portrait.jpg",
+        "/Images/image-space-capsule-portrait.jpg",
+        "/Images/image-spaceport-portrait.jpg",
+      ];
+
+      function newImage(imgEdit) {
+        if (imgEdit.matches) {
+          techImage.src = newImages[0];
+
+          desktopButtons.forEach(function (item) {
+            item.addEventListener("click", function (e) {
+              if (e.target.className.endsWith("02")) {
+                techImage.src = newImages[1];
+                item.style.backgroundColor = "#fff";
+                item.style.color = "#0b0e17";
+                item.style.border = "none";
+                desktopButtons[0].style.backgroundColor = "transparent";
+                desktopButtons[0].style.color = "#fff";
+                desktopButtons[0].style.border = "solid 2px grey";
+
+                desktopButtons[2].style.backgroundColor = "transparent";
+                desktopButtons[2].style.color = "#fff";
+                desktopButtons[2].style.border = "solid 2px grey";
+
+                desktopButtons[0].style.outline = "none";
+                desktopButtons[2].style.outline = "none";
+
+                techTitle.innerHTML = "SPACE CAPSULE";
+                techText.innerHTML =
+                  "Space capsule A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.";
+              }
+
+              if (e.target.className.endsWith("03")) {
+                techImage.src = newImages[2];
+                item.style.backgroundColor = "#fff";
+                item.style.color = "#0b0e17";
+                item.style.border = "none";
+                desktopButtons[0].style.backgroundColor = "transparent";
+                desktopButtons[1].style.backgroundColor = "transparent";
+
+                desktopButtons[0].style.color = "#fff";
+                desktopButtons[1].style.color = "#fff";
+
+                desktopButtons[0].style.border = "solid 2px grey";
+                desktopButtons[1].style.border = "solid 2px grey";
+
+                desktopButtons[0].style.outline = "none";
+                desktopButtons[1].style.outline = "none";
+
+                techTitle.innerHTML = "SPACEPORT";
+                techText.innerHTML =
+                  "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.";
+              }
+              if (e.target.className.endsWith("01")) {
+                techImage.src = newImages[0];
+                item.style.backgroundColor = "#fff";
+                item.style.color = "#0b0e17";
+                item.style.border = "none";
+
+                desktopButtons[1].style.backgroundColor = "transparent";
+                desktopButtons[2].style.backgroundColor = "transparent";
+
+                desktopButtons[1].style.color = "#fff";
+                desktopButtons[2].style.color = "#fff";
+
+                desktopButtons[1].style.border = "solid 2px grey";
+                desktopButtons[2].style.border = "solid 2px grey";
+
+                desktopButtons[1].style.outline = "none";
+                desktopButtons[2].style.outline = "none";
+
+                techTitle.innerHTML = "LAUNCH VEHICLE";
+                techText.innerHTML =
+                  "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!";
+              }
+            });
+          });
+        }
+      }
+
+      let imgEdit = window.matchMedia("(min-width:767px)");
+
+      newImage(imgEdit);
     </script>
   </body>
 </html>

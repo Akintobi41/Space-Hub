@@ -113,7 +113,6 @@ main {
 }
 .sub-menu {
   display: flex;
-  /* height: 60vh; */
   flex-direction: column;
   margin-top: -1.875rem;
   justify-content: space-evenly;
@@ -125,17 +124,6 @@ main {
   padding-bottom: 0.4rem;
   border-bottom: solid 2px white;
 }
-/* .navigation-2-link.active{ 
-  border-bottom: solid 2px white;
-}
-.navigation-2-link:focus{ 
-  border-bottom:solid 2px white;
-}
-.moon:active,
-.moon:focus{
-  border-bottom: solid 2px white; 
-  
-} */
 
 .navigation-2 ol li a.active {
   padding-bottom: 0.4rem;
@@ -175,7 +163,6 @@ h3 {
   border-block-width: 0.2px;
   font-size: 0.7rem;
   margin-left: 10.9375rem;
-  /* justify-content: center; */
 }
 .sub-menu-image {
   padding: 3rem 0 0 0;
@@ -209,7 +196,6 @@ h3 {
   font-weight: 300;
   color: white;
 }
-  
 
 /* Media Queries */
 
@@ -286,7 +272,7 @@ h3 {
   .title-tag {
     margin-left: 0.5rem;
   }
-  .title{ 
+  .title {
     width: 27rem;
     text-align: center;
   }
@@ -391,12 +377,11 @@ h3 {
   .navigation.active .nav-2 {
     border-bottom: none;
   }
-  .navigation.active ul li a{
-    display:inline-block; 
+  .navigation.active ul li a {
+    display: inline-block;
     padding-bottom: 0;
-    margin-top:0.65rem;
+    margin-top: 0.65rem;
   }
-  
 
   header {
     padding: 1rem 0;
@@ -449,7 +434,7 @@ h3 {
     display: block;
     text-align: center;
     margin-top: 1.5rem;
-    padding:0;
+    padding: 0;
   }
   .navigation ul li a {
     font-size: 1rem;
@@ -527,17 +512,17 @@ h3 {
     font-size: 0.5rem;
   }
 }
-@media screen and (max-width:300px){ 
-  body{
-     padding:1.2rem;
+@media screen and (max-width: 300px) {
+  body {
+    padding: 1.2rem;
   }
-  .title{ 
-    padding: 0 0.2rem 0 .4rem;
+  .title {
+    padding: 0 0.2rem 0 0.4rem;
   }
-  .main{ 
+  .main {
     padding: 0;
   }
-  main{ 
-    padding:.4rem;
+  main {
+    padding: 0.4rem;
   }
 }

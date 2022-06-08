@@ -14,9 +14,15 @@
     />
   </head>
   <body>
+    <!-- Start of Header -->
     <header>
       <div class="logo">
-        <img src="Images/logo.svg"  alt="star-like logo" width="35px" height="35px" />
+        <img
+          src="Images/logo.svg"
+          alt="star-like logo"
+          width="35px"
+          height="35px"
+        />
       </div>
 
       <nav class="top-nav">
@@ -28,13 +34,21 @@
             height="30px"
             class="hamburger"
           />
-          <img src="Images/icon-close.svg" alt="close hamburger" class="icon-close" width="30px" height="30px" />
+          <img
+            src="Images/icon-close.svg"
+            alt="close hamburger"
+            class="icon-close"
+            width="30px"
+            height="30px"
+          />
         </button>
         <div class="links-wrapper">
           <aside></aside>
           <div class="navigation">
             <a href="" id="link"><span>00</span>HOME</a>
-            <a href="/Inner destination/index.html"><span>01</span>DESTINATION</a>
+            <a href="/Inner destination/index.html"
+              ><span>01</span>DESTINATION</a
+            >
             <a href="/Crew/index.html"><span>02</span>CREW</a>
             <a href="/Technology/index.html"><span>03</span>TECHNOLOGY</a>
           </div>
@@ -46,7 +60,9 @@
         <h5>SO, YOU WANT TO TRAVEL TO</h5>
         <h1>SPACE</h1>
       </section>
+      <!-- End of Header -->
 
+      <!-- Main Body -->
       <section class="post-excerpt-2">
         <article>
           Let's face it; if you want to go to space, you might<br
@@ -68,29 +84,26 @@
         <button class="button">EXPLORE</button>
       </div>
     </main>
+
+    <!-- End of main body -->
     <script>
       let menuToggle = document.querySelector(".menuToggle");
       let navigation = document.querySelector(".navigation");
 
-
-      document.onclick = function(e){ 
-        if( e.target != document.querySelector('.hamburger') && e.target != document.querySelector('.icon-close')){ 
-          menuToggle.classList.remove('active');
-        navigation.classList.remove('active');
-
+      document.onclick = function (e) {
+        if (
+          e.target != document.querySelector(".hamburger") &&
+          e.target != document.querySelector(".icon-close")
+        ) {
+          menuToggle.classList.remove("active");
+          navigation.classList.remove("active");
         }
-      
-      }
+      };
 
-      
-
-
-
-      menuToggle.onclick = function(){ 
-        menuToggle.classList.toggle('active');
-        navigation.classList.toggle('active');
-      }
-
+      menuToggle.onclick = function () {
+        menuToggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+      };
     </script>
   </body>
 </html>
