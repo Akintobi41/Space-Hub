@@ -168,6 +168,14 @@
       }
 
 
+      let hamburger = document.querySelector('.hamburger');
+      let iconClose = document.querySelector('.icon-close');
+
+      document.onclick = function(e){ 
+        if(e.target !== hamburger && e.target !== iconClose){ 
+          navToggle.classList.remove('active');
+        }
+      }
 
    </script>
 
