@@ -102,6 +102,7 @@ header {
 .main {
   margin: 0 auto;
   padding: 1rem;
+  overflow: hidden;
 }
 
 main {
