@@ -55,7 +55,6 @@ h5 {
 }
 main {
   width: 100%;
-  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,15 +68,15 @@ figure {
   width: 100%;
 }
 .crew-image-1 {
-  width: 65%;
-  height: 65%;
+  width: 14rem;
+  height: 18rem;
   margin-bottom: 1.5rem;
 }
 .slider {
   width: 5rem;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .slider-toggle {
   width: 10px;
@@ -96,18 +95,18 @@ figure {
 article h4 {
   color: #7b7e85;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 article h3 {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
   font-size: 1.5rem;
   font-weight: 400;
 }
 article p {
   text-align: center;
   font-size: 0.85rem;
-  line-height: 18px;
+  line-height: 19px;
 }
 .menuToggle.active .hamburger {
   display: none;
