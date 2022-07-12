@@ -15,4 +15,3 @@ let menuToggle = document.querySelector(".menuToggle");
         menuToggle.classList.toggle("active");
         navigation.classList.toggle("active");
       };
-    </script>
