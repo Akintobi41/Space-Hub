@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: solid 1px red; */
 }
 body {
   max-width: 1500px;
@@ -28,6 +29,11 @@ header {
 
 .top-nav > button:hover {
   cursor: pointer;
+  border-color: transparent;
+}
+.top-nav  > button:focus{ 
+
+outline: none;
 }
 .navigation {
   display: none;
@@ -54,7 +60,6 @@ header {
   display: inline-block;
   margin-top: 1.25rem;
   font-family: "Inter", sans-serif;
-  /* font-weight: 100; */
 }
 .menuToggle {
   position: relative;
@@ -76,6 +81,9 @@ header {
     opacity: 0;
   }
 }
+.menuToggle.active {
+  outline: none;
+}
 .menuToggle.active img:nth-child(1) {
   display: block;
   opacity: 1;
@@ -92,6 +100,12 @@ header {
 .icon-close {
   position: absolute;
 }
+/* .hamburger:active,
+.icon-close:active,
+.menuToggle:active{ 
+  outline: none;
+} */
+
 .icon-close {
   display: none;
 }
@@ -110,7 +124,7 @@ span {
 main {
   display: flex;
   flex-direction: column;
-  height: 580px;
+  height: 36.3rem;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
@@ -156,6 +170,9 @@ hr {
 .buttons {
   align-self: center;
   flex-basis: 5.8125rem;
+}
+.buttons .button:hover{ 
+  background-color: #fff;
 }
 
 /* Media Queries */
@@ -269,6 +286,7 @@ hr {
     right: 501px;
     top: 32px;
   }
+
 }
 @media screen and (min-width: 900px) {
   nav {

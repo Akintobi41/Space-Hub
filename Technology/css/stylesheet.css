@@ -59,10 +59,9 @@ main {
 }
 
 .main-container {
-  height: 75%;
+  height: 60%;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .tech-image-1 {
   height: 100%;
@@ -123,11 +122,11 @@ article {
   background-color: #363942;
   height: 50%;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 .menuToggle.active ul li {
   list-style-type: none;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 .menuToggle.active ul li a {
   font-size: 1rem;
@@ -191,6 +190,10 @@ article {
   }
   hr {
     display: none;
+  }
+  .main-container{ 
+    height: 75%;
+    align-items: center;
   }
 }
 @media screen and (min-width: 767px) {

@@ -16,7 +16,8 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 0;
 }
 hr {
   display: none;
