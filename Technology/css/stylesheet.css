@@ -9,7 +9,8 @@ body {
   margin: auto;
   height: 100vh;
   padding: 1rem;
-  background: url("/Images/background-technology-mobile.jpg") no-repeat;
+  background: url("/Images/background-technology-mobile.jpg")
+    no-repeat;
   background-size: cover;
 }
 ul {
@@ -64,7 +65,7 @@ main {
   justify-content: center;
 }
 .tech-image-1 {
-  height: 100%;
+  height: 74%;
   width: 100%;
 }
 .slider {
@@ -102,8 +103,8 @@ article {
   letter-spacing: 2px;
 }
 .article-text {
-  font-size: 0.82rem;
-  line-height: 18px;
+  font-size: 0.7rem;
+  line-height: 15px;
   text-align: center;
 }
 .btn-1 {
@@ -139,7 +140,7 @@ article {
   display: none;
 }
 .new-content {
-  height: 10rem;
+  margin-top: 1.5rem;
 }
 
 @media screen and (min-width: 450px) {
@@ -149,7 +150,8 @@ article {
 }
 @media screen and (min-width: 575px) {
   body {
-    background: url("/Images/background-technology-tablet.jpg") no-repeat;
+    background: url("/Images/background-technology-tablet.jpg")
+      no-repeat;
     background-size: cover;
   }
   .hamburger,
@@ -191,7 +193,7 @@ article {
   hr {
     display: none;
   }
-  .main-container{ 
+  .main-container {
     height: 75%;
     align-items: center;
   }
@@ -200,7 +202,8 @@ article {
   body {
     max-width: 1500px;
     margin: auto;
-    background: url("/Images/background-technology-desktop.jpg") no-repeat;
+    background: url("/Images/background-technology-desktop.jpg")
+      no-repeat;
     background-size: cover;
     overflow: hidden;
   }
