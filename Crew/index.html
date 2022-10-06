@@ -3,11 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Crew</title>
     <link rel="stylesheet" href="/Crew/css/styling.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -44,7 +54,9 @@
 
           <ul>
             <li>
-              <a href="/index.html"><span class="sn">00</span> HOME</a>
+              <a href="/index.html"
+                ><span class="sn">00</span> HOME</a
+              >
             </li>
             <li>
               <a href="/Inner destination/index.html"
@@ -52,7 +64,9 @@
               >
             </li>
             <li>
-              <a href="" class="crew-link"><span class="sn">02</span> CREW</a>
+              <a href="" class="crew-link"
+                ><span class="sn">02</span> CREW</a
+              >
             </li>
             <li>
               <a href="/Technology/index.html"
@@ -72,7 +86,10 @@
     <!-- Main Content -->
     <main>
       <figure>
-        <img src="/Images/image-anousheh-ansari.png" class="crew-image-1" />
+        <img
+          src="/Images/image-anousheh-ansari.png"
+          class="crew-image-1"
+        />
         <section class="slider">
           <button class="slider-toggle toggle-1"></button
           ><button class="slider-toggle toggle-2"></button>
@@ -84,10 +101,11 @@
         <h4 class="crew-title">FLIGHT ENGINEER</h4>
         <h3 class="crew-name">ANOUSHEH ANSARI</h3>
         <p class="crew-text">
-          Anousheh Ansari is an Iranian American engineer and co-founder of
-          Prodea Systems. Ansari was the fourth self-funded space tourist the
-          first, the first self-funded woman to fly to the ISS, and the first
-          Iranian in space.
+          Anousheh Ansari is an Iranian American engineer
+          and co-founder of Prodea Systems. Ansari was the
+          fourth self-funded space tourist the first, the
+          first self-funded woman to fly to the ISS, and the
+          first Iranian in space.
         </p>
       </article>
     </main>
@@ -97,14 +115,18 @@
       let hamburger = document.querySelector(".hamburger");
       let iconClose = document.querySelector(".icon-close");
 
-      let menuToggle = document.querySelector(".menuToggle");
+      let menuToggle =
+        document.querySelector(".menuToggle");
 
       menuToggle.addEventListener("click", function () {
         menuToggle.classList.toggle("active");
       });
 
       document.body.onclick = function (e) {
-        if (e.target != hamburger && e.target != iconClose) {
+        if (
+          e.target != hamburger &&
+          e.target != iconClose
+        ) {
           menuToggle.classList.remove("active");
         }
       };
@@ -116,9 +138,12 @@
         "/Images/image-anousheh-ansari.png",
       ];
 
-      let toggleButtons = document.querySelectorAll(".slider-toggle");
+      let toggleButtons = document.querySelectorAll(
+        ".slider-toggle"
+      );
 
-      let crewImage = document.querySelector(".crew-image-1");
+      let crewImage =
+        document.querySelector(".crew-image-1");
       let crewText = document.querySelector(".crew-text");
       let crewTitle = document.querySelector(".crew-title");
       let crewName = document.querySelector(".crew-name");
@@ -128,40 +153,46 @@
           if (e.target.className.endsWith("toggle-1")) {
             crewImage.src = images[0];
             crewImage.style.width = "14rem";
-            crewImage.style.height = "18rem";
+            crewImage.style.height = "16rem";
 
             crewText.innerHTML =
               "Meet your crew Commander Douglas Hurley Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2";
             crewTitle.textContent = "COMMANDER";
             crewName.textContent = "DOUGLAS HURLEY GERALD";
             item.style.backgroundColor = "#fff";
-            toggleButtons[3].style.backgroundColor = "#50545d";
+            toggleButtons[3].style.backgroundColor =
+              "#50545d";
 
-            toggleButtons[1].style.backgroundColor = "#50545d";
+            toggleButtons[1].style.backgroundColor =
+              "#50545d";
 
-            toggleButtons[2].style.backgroundColor = "#50545d";
+            toggleButtons[2].style.backgroundColor =
+              "#50545d";
           }
 
           if (e.target.className.endsWith("toggle-2")) {
             crewImage.src = images[1];
             crewImage.style.width = "14rem";
-            crewImage.style.height = "18rem";
+            crewImage.style.height = "16rem";
 
             crewText.innerHTML =
               "Meet your crew Mission Specialist Mark Shuttleworth Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.";
             crewTitle.textContent = "MISSION SPECIALIST";
             crewName.textContent = "MARK SHUTTLEWORTH";
             item.style.backgroundColor = "#fff";
-            toggleButtons[3].style.backgroundColor = "#50545d";
+            toggleButtons[3].style.backgroundColor =
+              "#50545d";
 
-            toggleButtons[2].style.backgroundColor = "#50545d";
+            toggleButtons[2].style.backgroundColor =
+              "#50545d";
 
-            toggleButtons[0].style.backgroundColor = "#50545d";
+            toggleButtons[0].style.backgroundColor =
+              "#50545d";
           }
           if (e.target.className.endsWith("toggle-3")) {
             crewImage.src = images[2];
             crewImage.style.width = "14rem";
-            crewImage.style.height = "18rem";
+            crewImage.style.height = "16rem";
 
             crewText.innerHTML =
               "Meet your crew Pilot Victor Glover Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18. He was a crew member of Expedition 64, and served as a station systems flight engineer.";
@@ -169,27 +200,33 @@
             crewName.textContent = "VICTOR GLOVER";
             item.style.backgroundColor = "#fff";
 
-            toggleButtons[3].style.backgroundColor = "#50545d";
+            toggleButtons[3].style.backgroundColor =
+              "#50545d";
 
-            toggleButtons[1].style.backgroundColor = "#50545d";
+            toggleButtons[1].style.backgroundColor =
+              "#50545d";
 
-            toggleButtons[0].style.backgroundColor = "#50545d";
+            toggleButtons[0].style.backgroundColor =
+              "#50545d";
           }
           if (e.target.className.endsWith("toggle-4")) {
             crewImage.src = images[3];
             crewImage.style.width = "14rem";
-            crewImage.style.height = "18rem";
+            crewImage.style.height = "16rem";
 
             crewText.innerHTML =
               "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist the first, the first self-funded woman to fly to the ISS, and the first Iranian in space.";
             crewTitle.textContent = "FLIGHT ENGINEER";
             crewName.textContent = "ANOUSHEH ANSARI";
             item.style.backgroundColor = "#fff";
-            toggleButtons[2].style.backgroundColor = "#50545d";
+            toggleButtons[2].style.backgroundColor =
+              "#50545d";
 
-            toggleButtons[1].style.backgroundColor = "#50545d";
+            toggleButtons[1].style.backgroundColor =
+              "#50545d";
 
-            toggleButtons[0].style.backgroundColor = "#50545d";
+            toggleButtons[0].style.backgroundColor =
+              "#50545d";
           }
         });
       });
@@ -215,13 +252,17 @@
                 crewText.innerHTML =
                   "Meet your crew Commander Douglas Hurley Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2";
                 crewTitle.textContent = "COMMANDER";
-                crewName.textContent = "DOUGLAS HURLEY GERALD";
+                crewName.textContent =
+                  "DOUGLAS HURLEY GERALD";
                 item.style.backgroundColor = "#fff";
-                toggleButtons[3].style.backgroundColor = "#50545d";
+                toggleButtons[3].style.backgroundColor =
+                  "#50545d";
 
-                toggleButtons[1].style.backgroundColor = "#50545d";
+                toggleButtons[1].style.backgroundColor =
+                  "#50545d";
 
-                toggleButtons[2].style.backgroundColor = "#50545d";
+                toggleButtons[2].style.backgroundColor =
+                  "#50545d";
               }
 
               if (e.target.className.endsWith("toggle-2")) {
@@ -231,14 +272,18 @@
 
                 crewText.innerHTML =
                   "Meet your crew Mission Specialist Mark Shuttleworth Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.";
-                crewTitle.textContent = "MISSION SPECIALIST";
+                crewTitle.textContent =
+                  "MISSION SPECIALIST";
                 crewName.textContent = "MARK SHUTTLEWORTH";
                 item.style.backgroundColor = "#fff";
-                toggleButtons[3].style.backgroundColor = "#50545d";
+                toggleButtons[3].style.backgroundColor =
+                  "#50545d";
 
-                toggleButtons[2].style.backgroundColor = "#50545d";
+                toggleButtons[2].style.backgroundColor =
+                  "#50545d";
 
-                toggleButtons[0].style.backgroundColor = "#50545d";
+                toggleButtons[0].style.backgroundColor =
+                  "#50545d";
               }
               if (e.target.className.endsWith("toggle-3")) {
                 crewImage.src = newImages[3];
@@ -251,11 +296,14 @@
                 crewName.textContent = "VICTOR GLOVER";
                 item.style.backgroundColor = "#fff";
 
-                toggleButtons[3].style.backgroundColor = "#50545d";
+                toggleButtons[3].style.backgroundColor =
+                  "#50545d";
 
-                toggleButtons[1].style.backgroundColor = "#50545d";
+                toggleButtons[1].style.backgroundColor =
+                  "#50545d";
 
-                toggleButtons[0].style.backgroundColor = "#50545d";
+                toggleButtons[0].style.backgroundColor =
+                  "#50545d";
               }
               if (e.target.className.endsWith("toggle-4")) {
                 crewImage.src = newImages[0];
@@ -267,11 +315,14 @@
                 crewTitle.textContent = "FLIGHT ENGINEER";
                 crewName.textContent = "ANOUSHEH ANSARI";
                 item.style.backgroundColor = "#fff";
-                toggleButtons[2].style.backgroundColor = "#50545d";
+                toggleButtons[2].style.backgroundColor =
+                  "#50545d";
 
-                toggleButtons[1].style.backgroundColor = "#50545d";
+                toggleButtons[1].style.backgroundColor =
+                  "#50545d";
 
-                toggleButtons[0].style.backgroundColor = "#50545d";
+                toggleButtons[0].style.backgroundColor =
+                  "#50545d";
               }
             });
           });
@@ -281,8 +332,6 @@
       let mediaX = window.matchMedia("(min-width:767px)");
 
       imgEdit(mediaX);
-
-  
     </script>
   </body>
 </html>
