@@ -5,48 +5,57 @@
   color: #fff;
   font-family: "Inter", sans-serif;
 }
+
 body {
   margin: auto;
   padding: 1rem;
   height: 100vh;
-  background: url("/Images/background-crew-mobile.jpg")
-    no-repeat;
+  background: url("/Images/background-crew-mobile.jpg") no-repeat;
   background-size: cover;
-  overflow: hidden;
+  background-color: grey;
 }
+
 header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.5rem;
   padding: 1rem 0;
 }
+
 hr {
   display: none;
 }
+
 .sn {
   display: none;
 }
+
 .menuToggle {
   width: 2.1875rem;
   height: 2.1875rem;
   cursor: pointer;
 }
+
 .menuToggle ul {
   display: none;
 }
+
 .menuToggle {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .icon-close {
   position: absolute;
   display: none;
 }
+
 h5 {
   font-size: 0.9rem;
 }
+
 .header-text {
   display: flex;
   justify-content: space-around;
@@ -55,6 +64,7 @@ h5 {
   margin-bottom: 2.5rem;
   padding-left: 3.5rem;
 }
+
 main {
   width: 100%;
   display: flex;
@@ -62,6 +72,7 @@ main {
   justify-content: center;
   align-items: center;
 }
+
 figure {
   display: flex;
   flex-direction: column;
@@ -69,17 +80,20 @@ figure {
   align-items: center;
   width: 100%;
 }
+
 .crew-image-1 {
   width: 14rem;
   height: 16rem;
   margin-bottom: 1.5rem;
 }
+
 .slider {
   width: 5rem;
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
 }
+
 .slider-toggle {
   width: 10px;
   height: 10px;
@@ -88,35 +102,43 @@ figure {
   background-color: #50545d;
   color: #50545d;
 }
+
 .slider-toggle:hover {
   cursor: pointer;
 }
+
 .toggle-4 {
   background-color: #fafafc;
 }
+
 article h4 {
   color: #7b7e85;
   text-align: center;
   margin-bottom: 0.5rem;
 }
+
 article h3 {
   text-align: center;
   margin-bottom: 0.5rem;
   font-size: 1.3rem;
   font-weight: 400;
 }
+
 article p {
   text-align: center;
   font-size: 0.8rem;
   line-height: 17px;
 }
+
 .menuToggle.active .hamburger {
   display: none;
 }
+
 .menuToggle.active .icon-close {
   display: block;
   z-index: 1;
 }
+
 .menuToggle.active ul {
   display: flex;
   flex-direction: column;
@@ -125,25 +147,26 @@ article p {
   position: fixed;
   top: 0;
   left: 0;
-  background: linear-gradient(
-    to right,
-    hsla(215, 11%, 35%, 1),
-    hsla(217, 23%, 18%, 1)
-  );
+  background: linear-gradient(to right,
+      hsla(215, 11%, 35%, 1),
+      hsla(217, 23%, 18%, 1));
   width: 100%;
   height: 50%;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+
 .menuToggle.active ul li {
   display: inline-block;
   margin-top: 2rem;
   font-size: 1rem;
 }
+
 .menuToggle.active ul li a {
   font-size: 1rem;
   text-decoration: none;
 }
+
 .alt-text-2 {
   font-weight: bold;
 }
@@ -152,34 +175,36 @@ article p {
 
 @media screen and (min-width: 575px) {
   body {
-    background: url("/Images/background-crew-tablet.jpg")
-      no-repeat;
+    background: url("/Images/background-crew-tablet.jpg") no-repeat;
     background-size: cover;
   }
+
   .hamburger,
   .icon-close {
     display: none;
   }
+
   .menuToggle {
     margin-right: -1rem;
     width: 30rem;
     height: 4.5rem;
-    background: linear-gradient(
-      to right,
-      hsla(215, 11%, 35%, 1),
-      hsla(217, 23%, 18%, 1)
-    );
+    background: linear-gradient(to right,
+        hsla(215, 11%, 35%, 1),
+        hsla(217, 23%, 18%, 1));
     justify-content: unset;
   }
+
   .menuToggle ul {
     display: flex;
     margin-left: 1.5rem;
     justify-content: space-around;
   }
+
   .menuToggle ul li {
     list-style-type: none;
     margin-left: 1.5rem;
   }
+
   .menuToggle ul li a {
     font-size: 0.65rem;
     text-decoration: none;
@@ -190,62 +215,78 @@ article p {
     transition: border 0.2s;
     word-spacing: 2px;
   }
+
   .menuToggle ul li a:hover {
     border-bottom: solid 2px #fff;
   }
+
   .crew-link {
     border-bottom: solid 2px #fff;
   }
+
   main,
   figure {
     flex-direction: column-reverse;
   }
+
   header {
     margin-top: -1rem;
     margin-bottom: 3.5rem;
     height: 4rem;
   }
+
   .logo {
     align-self: center;
   }
+
   .sn {
     display: inline;
     font-weight: bold;
   }
+
   .header-text {
     margin-bottom: 1.5rem;
   }
+
   .alt-text-1 {
     color: #7b7e85;
   }
+
   main {
     margin-top: 3rem;
   }
+
   article h4 {
     margin-bottom: 0.5rem;
   }
+
   article h3 {
     color: #fff;
   }
+
   article p {
     padding: 0.5rem 3rem;
     height: 4rem;
     font-size: 0.75rem;
     letter-spacing: normal;
   }
+
   .crew-image-1 {
     margin-bottom: 0;
   }
+
   article {
     margin-bottom: 1.5rem;
   }
+
   figure {
     width: 90%;
     margin-top: 0.5rem;
   }
 }
-@media screen and (min-width: 634px) {
-}
+
+@media screen and (min-width: 634px) {}
+
 @media screen and (min-width: 767px) {
   body {
     background: url("/Images/background-crew-desktop.jpg");
@@ -254,6 +295,7 @@ article p {
     margin: auto;
     max-width: 1500px;
   }
+
   hr {
     display: block;
     flex-grow: 1;
@@ -265,6 +307,7 @@ article p {
     z-index: 999;
     background-color: grey;
   }
+
   .links-wrapper {
     display: flex;
     flex-grow: 1;
@@ -275,19 +318,23 @@ article p {
     padding: 1rem 0;
     margin-top: 0;
   }
+
   main,
   figure {
     flex-direction: row-reverse;
   }
+
   main {
     position: relative;
     height: 55%;
     justify-content: space-between;
   }
+
   figure {
     width: 100%;
     justify-content: unset;
   }
+
   .slider {
     position: absolute;
     left: 0;
@@ -295,17 +342,21 @@ article p {
     margin-left: 4.5rem;
     justify-content: space-around;
   }
+
   article {
     margin-bottom: 15rem;
   }
+
   article h3 {
     font-size: 1.55rem;
   }
+
   article h3,
   article h4 {
     text-align: left;
     margin-left: 4.5rem;
   }
+
   article p {
     text-align: left;
     padding: 0;
@@ -315,19 +366,23 @@ article p {
     line-height: 24px;
     font-size: 0.9rem;
   }
+
   .crew-image-1 {
     margin-top: 5.5rem;
     width: 20rem;
     height: 27rem;
   }
+
   header {
     margin-bottom: 1rem;
   }
 }
+
 @media screen and (min-width: 990px) {
   article {
     margin-bottom: 13rem;
   }
+
   article p {
     width: 24rem;
   }
